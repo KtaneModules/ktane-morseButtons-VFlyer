@@ -393,6 +393,7 @@ public class morseButtonsScript : MonoBehaviour
 #pragma warning restore 414
 	IEnumerator TwitchHandleForcedSolve()
 	{
+		Debug.LogFormat("[Morse Buttons #{0}] Issuing force solve viva TP Handler.", moduleId);
 		while (presses.Count > 0)
 		{
 			buttons[presses.ElementAt(0)].OnInteract();
